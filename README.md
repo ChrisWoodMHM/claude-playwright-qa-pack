@@ -13,6 +13,7 @@ best practices.
 | `.claude/settings.json` | Wires the hook. Merge with your existing settings. |
 | `eslint/eslint.config.example.mjs` | Drop-in ESLint config for Playwright + TS projects. Catches missing `await` (the #1 flakiness cause) mechanically. |
 | `GUIDELINES.md` | Short dev-facing reference: how to write application code that stays testable. |
+| `USAGE.md` | Workflow guide for test authors (human and AI): when to invoke `/qa-review`, how to triage failures, PR checklist. |
 
 ## Install (per project)
 

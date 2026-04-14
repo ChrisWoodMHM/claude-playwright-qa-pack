@@ -1,0 +1,16 @@
+{
+  "_comment": "Merge these entries into your existing .claude/settings.json. The hook path below assumes the script lives at .claude/hooks/block-debug-artifacts.sh relative to the project root. Adjust for ~/.claude installations.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/block-debug-artifacts.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
